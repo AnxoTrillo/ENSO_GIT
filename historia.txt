@@ -22,6 +22,32 @@ COGEMOS EL HASH:
 ETIQUETAMOS:
 	git tag -a "R1" -m "primera etiquetacion" db20be452e648eda9bf49121c09d34c3754af963
 
+CREAMOS UNA RAMA MEJORAS:
+	git branch "Mejoras"
+	git switch "Mejoras"
+
+METEMOS EL FICHERO DE LAS PROPUESTAS DE MEJORA EN procesos/controldecambios (no necesita comandos)
+BORRAMOS EL FICHERO DE CONTROL DE CAMBIOS V1 Y AÑADIMOS EL 2 (no necesita comandos)
+
+AÑADIMOS LOS CAMBIOS AL STAGING:
+	git add .
+
+HACEMOS COMMIT:
+	git commit -m "segundo commit, este en la rama mejoras con la fase dos del proceso de cambios y sus nuevas imagenes"
+
+MEZCLAMOS CON LA RAMA PRINCIPAL:
+	git switch master
+	git merge Mejoras
+
+CORTAMOS LA RAMA MEJORAS:
+	git branch -d Mejoras
+
+BORRAMOS EL PDF DE MEJORAS:
+	cd procesos/controldecambios/
+	rm DP_ControldeCambios_Grupo6-v1_1.pdf
+
+
+
 
 
 
