@@ -1,11 +1,32 @@
 Comandos Git:
 
-Git init
+CREAMOS EL REPOSITORIO:
+	Git init
 
-(mkdir procesos, cd procesos, mkdir ControlDeCambios, cd ..)
-(mkdidr proyectos, cd proyectos, mkdir Prj1)
-(cd .. , cd procesos/controldecambios, mkdir plantillas)
-(movemos el documento de control de cambios y las imágenes a controldecambios)
+CREAMOS LAS CARPETAS NECESARIAS Y COPIAMOS LOS ARCHIVOS INICIALES DENTRO (algunas no usan comandos por ser operaciones que se pueden hacer fuera de terminal):
+
+	(mkdir procesos, cd procesos, mkdir ControlDeCambios, cd ..)
+	(mkdidr proyectos, cd proyectos, mkdir Prj1)
+	(cd .. , cd procesos/controldecambios, mkdir plantillas)
+	(movemos el documento de control de cambios y las imágenes a controldecambios)
+
+SUBIMOS LOS ARCHIVOS A LA STAGING AREA:
+	git add .
+
+HACEMOS EL PRIMER COMMIT:
+	git commit -m "primer commit con el directorio inicial, la planificacion inicial y las plantillas"
+
+COGEMOS EL HASH:
+	git log
+
+ETIQUETAMOS:
+	git tag -a "R1" -m "primera etiquetacion" db20be452e648eda9bf49121c09d34c3754af963
+
+
+
+
+
+
 
 
 
