@@ -1,0 +1,11 @@
+Comandos Git:
+
+Git init
+
+(mkdir procesos, cd procesos, mkdir ControlDeCambios, cd ..)
+(mkdidr proyectos, cd proyectos, mkdir Prj1)
+(cd .. , cd procesos/controldecambios, mkdir plantillas)
+(movemos el documento de control de cambios y las imágenes a controldecambios)
+
+
+
