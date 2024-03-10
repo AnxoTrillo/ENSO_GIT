@@ -86,8 +86,8 @@ HACEMOS LA SUBIDA FINAL
 	git add .
 	git commit -m "commmit final"
 	git log	
-	git tag -a "R4" -m "etiqueta final" e514fa1bfb37e3f746d6f263f29640b2d365d1da
-	git push origin R4
+	git tag -a "Rfinal" -m "etiqueta final" e514fa1bfb37e3f746d6f263f29640b2d365d1da
+	git push origin master
 	
 	
 
