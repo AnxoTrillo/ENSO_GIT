@@ -46,10 +46,50 @@ BORRAMOS EL PDF DE MEJORAS:
 	cd procesos/controldecambios/
 	rm DP_ControldeCambios_Grupo6-v1_1.pdf
 
+ACTUALIZAMOS EL REPOSITORIO Y ETIQUETAMOS:
+	git add .
+	git commit -m "tercer commit, este se hace en el master de nuevo al eliminar el fichero de sugerencias"
+	git log
 
+CAMBIAMOS LA V2 POR LA V3 (no necesita comando) Y ACTUALIZAMOS EL REPOSITORIO:
+	git add .
+	git commit -m "cuarto commit, cambiamos v2 por v3"
 
+DESHACEMOS EL COMMIT:
+	git log
+	git reset R2
 
+METEMOS LAS IMÁGENES (no hace falta comando) y actualizamos:
+	git add .
+	git commit -m "quinto commit, cambiamos v2 por v3 y ponemos las imagenes"
 
+ETIQUETAMOS:
+	git log
+	git tag -a "R3" -m "tercera etiquetacion" 2ea931b0a07fc081253161943a90c46350562c16
+
+HACEMOS UN PUSH A GITHUB:
+	git remote add origin https://github.com/AnxoTrillo/ENSO_GIT.git
+	git push origin master
+	git push origin --tags
+
+CHEQUEAMOS SI LA RAMA ESTÁ ACTUALIZADA:
+	git status
+
+MODIFICAMOS HISTORIA.TXT:
+	git add .
+
+COMPARAMOS EL NUEVO HISTORIA CON EL VIEJO:
+	git fetch origin
+	git diff --cached R3 -- historia.txt
+	
+HACEMOS LA SUBIDA FINAL
+	git add .
+	git commit -m "commmit final"
+	git log	
+	git tag -a "R4" -m "etiqueta final" e514fa1bfb37e3f746d6f263f29640b2d365d1da
+	git push origin R4
+	
+	
 
 
 
